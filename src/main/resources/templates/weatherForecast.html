@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Forecast at Liljeholmen</title>
+</head>
+<body>
+<div class="Forecast">
+  <h2>
+    Weather Forecast at Liljeholmen
+  </h2>
+  <div>
+    Origin: <span th:text="${forecast.source()}"></span> <br>
+    Date: <span th:text="${dateTime}"></span> <br>
+    Temperature: <span th:text="${forecast.temperature().value()}"></span> <span th:text="${forecast.temperature().unit()}"></span><br>
+    Humidity: <span th:text="${forecast.humidity().value()}"></span>  <span th:text="${forecast.humidity().unit()}"></span><br>
+  </div>
+</div>
+
+</body>
+</html>
