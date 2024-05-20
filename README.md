@@ -11,7 +11,7 @@ The required data is gathered from the following weather services (or client api
 ### Best Weather
 In this application, only temperature and humidity are taken into account.
 
-That with the max temperature value is appreciated and considered best.
+Maximum temperature is appreciated and considered "Best".
 However, if two services return the same temperature value, then the one with greater humidity is preferred.
 
 ### Get forecast
